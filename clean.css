@@ -1,0 +1,421 @@
+a {
+	/*border: 3px magenta solid;*/
+	color: #FF6533;
+}
+a:hover, a:focus {
+	color: #FF4C00;
+}
+html, body {
+    height:100%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	background-size: contain;
+}
+body {
+	/*display: flex;*/
+    /*flex-direction: column;*/
+	/*background-image: url("fond.jpg");*/
+	font-family: Monaco;
+	margin: 0 0 0 0;
+}
+
+#header {
+	position: fixed;
+	background-color: #3e3e3e;
+	height: 45px;
+	width: 100%;
+	display: flex;
+	flex-direction:row;
+	align-items: center;
+    /*justify-content: center;*/
+	z-index: 10;
+}
+
+#panel {
+	position: fixed;
+	left: 0px;
+	height: 100%;
+	width: 15%;
+	border-left: 1px solid #3e3e3e;
+	padding-top: 45px;
+
+
+}
+
+.hdrbox {
+	text-align: center;
+	vertical-align: middle;
+	/*background-color: #00FFFF;*/
+}
+
+#intro {
+	height: 100%;
+	padding-top: 45px;
+	/*background-color: #7F4F00;*/
+	/*border: 3px pink solid;*/
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+}
+
+
+#intro h1 {
+	/*border: 3px blue solid;*/
+	text-align: center;
+	font-size: 500%;
+}
+#intro h2 {
+	/*border: 3px purple solid;*/
+	text-align: center;
+	font-style: oblique;
+	font-size: 200%;
+}
+#intro h3 {
+	/*border: 3px green solid;*/
+	text-align: center;
+	font-size: 100%;
+}
+.quotes {display: none;} /*http://jsfiddle.net/jfriend00/n4mKw/*/
+
+#network {
+	/*border: 3px pink solid;*/
+	text-align: center;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+    color: initial;
+}
+
+/* Set a specific color for each brand */
+
+/* LinkedIn */
+.fa-linkedin {
+    background: #0077B5;
+    color: white;
+}
+
+/* Github */
+.fa-github {
+    background: #6e5494;
+    color: white;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+	margin-top: 45px;
+	padding-top: 20px;
+	padding-left: 9%;
+	font-size: 200%;
+	/*background-color: #FFFF00;*/
+}
+
+hr.style-two {
+	/*https://css-tricks.com/examples/hrs/*/
+    border: 0;
+    margin-top: 3px;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), 
+    											rgba(0, 0, 0, 1), 
+    											rgba(0, 0, 0, 0.20),
+    											rgba(0, 0, 0, 0.15),
+    											rgba(0, 0, 0, 0.1), 
+    											rgba(0, 0, 0, 0.05),
+    											rgba(0, 0, 0, 0));
+}
+
+.content{
+	border-radius: 3px;
+	box-shadow: 0 0 0 0px rgba(0,0,0,0.2);
+	transition: all 200ms ease-out;
+	margin-bottom: 3px;
+	height: 200px;
+	/*border: 3px violet solid;*/
+	/**/
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.content:hover {
+	box-shadow: 0 0 6px #888888;
+}
+.r-instance {
+	width: 40%;
+	height: 100%;
+	/*border: 3px yellow solid;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	text-align: left;
+}
+
+.l-instance {
+	width: 40%;
+	height: 100%;
+	/*border: 3px yellow solid;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	text-align: right;
+}
+
+.inst-text-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: inherit;
+}
+
+.inst-img {
+	max-width: 50%;
+	/*border: 3px #00FF7F solid;*/
+}
+
+.inst-title {
+
+}
+.inst-txt {
+	/*border: 3px #00FF7F solid;*/
+	justify-content: inherit;
+}
+.inst-txt h3 {
+	font-size: 150%
+}
+.inst-txt h5 {
+	font-size: 100%
+}
+.inst-txt p {
+	font-size: 80%
+}
+.inst-date {
+	/*border: 3px #00FF7F solid;*/
+}
+
+.timeline-frame {
+	height: 100%;
+	padding: 0;
+	margin: 0 10px 0 10px;
+	/*align-self: flex-start;*/
+	display: flex;
+	flex-direction: column;
+	width: 3%;
+	/*border: 3px violet solid;*/
+}
+
+.timeline-line-top {
+    border: 0;
+    margin: 0 auto 0 auto;
+    height: 45%;
+    width: 5px;
+    background-color: black;
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    /*background-image: linear-gradient(to top, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 1));*/
+}
+
+.timeline-line-bot {
+    border: 0;
+    margin: 0 auto 0 auto;
+    height: 45%;
+    width: 5px;
+    background-color: black;
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    /*background-image: linear-gradient(to top, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 1));*/
+}
+.timeline-dot {
+    background-image: url('./circle.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*width: 100%;*/
+    height: 10%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /*border: 3px white dotted;*/
+}
+.timeline-date {
+	text-align: center;
+    /*width: 100%;*/
+    height: 10%;
+    font-size: 120%;
+    /*border: 3px white dotted;*/
+}
+.timeline-line-empty {
+    border: 0;
+    margin: 0 auto 0 auto;
+    height: 45%;
+    width: 5px;
+    /*background-color: white;*/
+    /*background-image: linear-gradient(to bottom, rgba(100, 100, 100, 0), rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.60),rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 1));*/
+}
+
+
+#edu {
+	background-color: #FFFFFF;
+	/*scroll-behavior: smooth;*/
+}
+#old-edu {
+	/*http://api.jquery.com/slidedown/*/
+	display: none;
+}
+#exp {
+	background-color: #FFFFFF;
+	/*scroll-behavior: smooth;*/
+}
+#old-exp {
+	display: none;
+}
+#projects {
+	background-color: #FFFFFF;
+	/*scroll-behavior: smooth;*/
+}
+
+.project-table {
+	padding: 20px 20px 20px 20px;
+}
+.project-table h4 {
+	padding-left: 40px;
+	padding-bottom: 20px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:#f5f5f5;}
+
+#leisures {
+	background-color: #FFFFFF;
+	/*scroll-behavior: smooth;*/
+}
+
+
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+body {
+  overflow-x: hidden;
+}
+
+#wrapper {
+  padding-right: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+  padding-right: 250px; /*reduce wrapper*/
+}
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  right: 0px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  /*background: #2e2e2e;*/
+  border-left: 1px solid #3e3e3e;
+  padding-top: 45px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px;
+}
+
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -250px;
+}
+
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #999999;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.sidebar-nav>.sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+ 
+
+
