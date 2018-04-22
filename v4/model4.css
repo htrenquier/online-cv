@@ -1,0 +1,21 @@
+body {
+	background-image: url('img/bg.png');
+}
+
+.wrapper {
+	height: 90%;
+	width: 90%;
+	display: flex;
+	flex-direction:row;
+	align-items: center;
+    justify-content: center;
+}
+
+.tools {
+	width: 10%;
+	border: 3px blue solid;
+}
+.cube {
+	width: 100%;
+	border: 3px green solid;
+}

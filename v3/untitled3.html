@@ -3,7 +3,6 @@
 <head>
 	<title>Henri Trenquier</title>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!--<link rel="stylesheet" href="model3.css" />-->
 	<!--<link rel="stylesheet" href="clean.css" />-->
@@ -16,36 +15,34 @@
 	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
-<body class="width-flex container-fluid fond">
-	<div id="header" class="row">
-		<div class="col-md-offset-3 col-md-6">
-			<div class="hdrbox" class="row"> <!--1 row => 12cols-->
-				<div class="col-md-offset-1 col-md-2">
-					<a href="#intro">Intro</a>
-				</div>
-				<div class="col-md-2">
-					<a href="#edu" >Edu</a>
-				</div>
-				<div class="col-md-2">
-					<a href="#exp" >Exp</a>
-				</div>
-				<div class="col-md-2">
-					<a href="#projects">Projects</a>
-				</div>
-				<div class="col-md-2">
-					<a href="#leisures">Leisures</a>
-				</div>
-				<div class="col-md-offset-11">
-					<a class="menu-toggle" class="btn btn-secondary">></a>
-				</div>	
+<body>
+	<div id="header">
+		<div class="hdrbox">
+			<div class="hdr-item">
+				<a href="#intro">Intro</a>
+			</div>
+			<div class="hdr-item">
+				<a href="#edu" >Edu</a>
+			</div>
+			<div class="hdr-item">
+				<a href="#exp" >Exp</a>
+			</div>
+			<div class="hdr-item">
+				<a href="#projects">Projects</a>
+			</div>
+			<div class="hdr-item">
+				<a href="#leisures">Leisures</a>
+			</div>
+			<div class="hdr-item">
+				<a class="menu-toggle">></a>
 			</div>	
-		</div>
+		</div>	
 	</div>
 	<div id="wrapper">
 		<!-- Panel content -->
 		<!-- 1 - Stjo -->
 		<div class="sidebar-wrapper">
-			<ul class="sidebar-nav-fly">
+			<div class="sidebar-nav-fly">
 				<div class="sb-container">
 					<div class="sb-img" href="https://www.saintjosephtoulouse.org">
 						<img src="img/stjo.png">
@@ -62,11 +59,11 @@
 						<strong>Spécialité</strong> Informatique et Science du Numérique (ISN)
 					</div>
 				</div>
-			</ul>
+			</div>
 		</div>
 		<!-- 2 - CPGE -->
 		<div class="sidebar-wrapper">
-			<ul class="sidebar-nav-fly">
+			<div class="sidebar-nav-fly">
 				<div class="sb-container">
 					<div class="sb-img" href="http://www.letudiant.fr/etudes/annuaire-enseignement-superieur/etablissement/etablissement-lycee-deodat-de-severac-4433.html">
 						<img src="img/deodat.png">
@@ -86,11 +83,11 @@
 						<strong>Matières étudiées</strong> Anglais, Chimie, Informatique, Mathématiques, Philosophie, Physique, Sciences de l'Ingénieur   
 					</div>
 				</div>
-			</ul>
+			</div>
 		</div>
 		<!-- 3 - N7 -->
 		<div class="sidebar-wrapper">
-			<ul class="sidebar-nav-fly">
+			<div class="sidebar-nav-fly">
 				<div class="sb-container">
 					<div class="sb-img" href="http://www.enseeiht.fr/">
 						<img src="img/n7.png">
@@ -108,85 +105,88 @@
 						<strong>Double diplôme</strong> avec le Master SNE à l'Université d'Amsterdam
 					</div>
 				</div>
-			</ul>
+			</div>
 		</div>
 		<!-- 4 - SNE -->
 		<div class="sidebar-wrapper">
-			<ul class="sidebar-nav-fly">
+			<div class="sidebar-nav-fly">
 				<div class="sb-container">
-					<div class="sb-img" href="http://os3.nl/">
-						<img src="img/sne.png">
+					<div class="sb-transition" OnClick="alert();">
+						<img src="img/left-arrow.png">
 					</div>
-					<p></p>
-					<hr class="style-sb">
-					<div class="sb-title">
-						<h3>MSc Security and Network Engineering</h3>
-						<h5>Université d'Amsterdam</h5>
-					</div>
-					<hr class="style-sb">
-					<div class="sb-text">
-						<strong>Master Sciences</strong> Security and Network Engineering (nouveau nom)
+					<div class="sb-content">
+						<div class="sb-img" href="http://os3.nl/">
+							<img src="img/uva-sb.png">
+						</div>
 						<p></p>
-						<strong>Double diplôme</strong> avec l'école d'ingénieur ENSEEIHT à Toulouse
+						<hr class="style-sb">
+						<div class="sb-title">
+							<h3>MSc Security and Network Engineering</h3>
+							<h5>Université d'Amsterdam</h5>
+						</div>
+						<hr class="style-sb">
+						<div class="sb-text">
+							<strong>Master Sciences</strong> Security and Network Engineering (nouveau nom)
+							<p></p>
+							<strong>Double diplôme</strong> avec l'école d'ingénieur ENSEEIHT à Toulouse
+						</div>
 					</div>
 				</div>
-			</ul>
+			</div>
+
 		</div>
 
 		<!-- 5- SEDI -->
 		<div class="sidebar-wrapper">
-			<ul class="sidebar-nav-fly">
+			<div class="sidebar-nav-fly">
 				<li class="sidebar-brand">
 					EXP
 				</li>
-			</ul>
+			</div>
 		</div>
 		<!-- /#sidebar-wrapper -->
 
 
-		<div class="row" id="intro">
-			<div class="col-md-12">
-				<h1>Henri Trenquier</h1>
+		<div class="section" id="intro">
+			<h1>Henri Trenquier</h1>
 
-				<h2> Software Engineer · Security and Network Engineer </h2>
-				<div id="network">
-					<div class="row">
-						<!-- Add font awesome icons -->
-						<a href="https://www.linkedin.com/in/henri-trenquier-a87b72150/" class="fa fa-linkedin" target="_blank"></a>
-						<a href="https://github.com/htrenquier" class="fa fa-github" target="_blank"></a>
-					</div>
+			<h2> Software Engineer · Security and Network Engineer </h2>
+			<div id="network">
+				<div class="row">
+					<!-- Add font awesome icons -->
+					<a href="https://www.linkedin.com/in/henri-trenquier-a87b72150/" class="fa fa-linkedin" target="_blank"></a>
+					<a href="https://github.com/htrenquier" class="fa fa-github" target="_blank"></a>
 				</div>
-				<!-- fade out -->
-				<!-- fade in  -->
-				<h3 class="quotes"> As a young French engineer, I devote myself entirely in every task I am expected to complete.
-				</h3>
-				<h3 class="quotes">I am an organized, entirely reliable and very motivated person. 
-				</h3>
-				<h3 class="quotes">The flawless results arise from the interest I find in the topics I work on.
-				</h3>
-				<!-- fade out -->
-				<!-- fade in  -->
-			</div>	
+			</div>
+			<!-- fade out -->
+			<!-- fade in  -->
+			<h3 class="quotes"> As a young French engineer, I devote myself entirely in every task I am expected to complete.
+			</h3>
+			<h3 class="quotes">I am an organized, entirely reliable and very motivated person. 
+			</h3>
+			<h3 class="quotes">The flawless results arise from the interest I find in the topics I work on.
+			</h3>
+			<!-- fade out -->
+			<!-- fade in  -->
 		</div>
+		<div class="intro-transition"></div>
 
 		<!-- EDUCATION -->
-		<div class="row" class="section">
-			<div id="edu" class="col-md-12">
-				<div class="row">
-					<div class="title">Education</div>
-					<hr class="style-two">
-				</div>
+		<div class="section">
+			<div id="edu">
+				<div class="title">Education</div>
+				<hr class="style-two">
 
 				<div id="old-edu"><!--slides-->
-
-					<div class="content"  OnClick="showPane(0);">
-						<div class="l-instance">
-							<div class="inst-img">
-								<img src="img/stjo.png">
-							</div>
+					<div class="content">
+						<div class="l-active l-instance" OnClick="showPane(0);">
 							<div class="inst-text-content">
+								<div class="inst-img">
+									<img src="img/stjo.png">
+								</div>
 								<div class="inst-txt">
-									<h3> Baccalauréat Scientifique </h3>
+									<h3>Baccalauréat Scientifique</h3>
+									<p>Lycée Saint Joseph • Toulouse (France)</p>
 								</div>
 							</div>
 						</div>
@@ -196,24 +196,13 @@
 							<div class="timeline-line-bot"></div>
 						</div>
 						<div class="r-instance">
-							<div class="inst-text-content">
-								<div class="inst-txt">
-									<h5><b> Lycée Saint Joseph</b></h5>
-								</div>
-								<div class="inst-txt">
-									<h5>Toulouse (France)</h5>
-								</div>
-							</div>
 						</div>			
 					</div>
-					<div class="content" OnClick="showPane(1);">
+					<div class="content">
 						<div class="l-instance">
-							<div class="inst-img">
-								<img src="img/deodat.png">
-							</div>
-							<div class="inst-txt">
-								<h3>CPGE</h3>
-								<h5>(Maths sup - Maths spé)</h5>
+							<div class="inst-text-content">
+								<div class="inst-txt"> 
+								</div>
 							</div>
 						</div>
 						<div class="timeline-frame">
@@ -221,26 +210,27 @@
 							<div class="timeline-date">2015</div>
 							<div class="timeline-line-bot"></div>
 						</div>
-						<div class="r-instance">
+						<div class="r-instance r-active" OnClick="showPane(1)">
 							<div class="inst-text-content">
 								<div class="inst-txt">
-									<h5><b> Lycée Déodat de Séverac</b></h5>
+									<h3>CPGE Déodat de Séverac</h3>
+									<p>Toulouse (France) • 2 ans</p>
 								</div>
-								<div class="inst-txt">
-									<h5>Toulouse (France)</h5>
-									2 ans
-								</div>
+							</div>
+							<div class="inst-img">
+								<img src="img/deodat.png">
 							</div>
 						</div>		
 					</div>
-					<div class="content" OnClick="showPane(2);">
-						<div class="l-instance">
-							<div class="inst-img">
-								<img src="img/n7.png">
-							</div>
+					<div class="content">
+						<div class="l-instance l-active" OnClick="showPane(2);">
 							<div class="inst-text-content">
+								<div class="inst-img">
+									<img src="img/n7.png">
+								</div>								
 								<div class="inst-txt">
 									<h3>ENSEEIHT</h3>
+									<p>Toulouse (France) • 3 ans</p>
 								</div>
 							</div>
 						</div>
@@ -250,52 +240,44 @@
 							<div class="timeline-line-bot"></div>
 						</div>
 						<div class="r-instance">
-							<div class="inst-txt">
-								<h5>Toulouse (France)</h5>
-								3 ans
-							</div>
 						</div>		
 					</div>
 				</div>
 				<!-- RECENT EDUCATION -->
-				<div class="content" OnClick="showPane(3);">
+				<div class="content">
 					<div class="l-instance">
-						<div class="inst-img">
-							<img src="img/uvat.png">
-						</div>
-						<div class="inst-text-content">
-							<div class="inst-txt">
-								<h3> Security & Network Engineering </h3>
+						<div class="l-plus-container">
+							<div id="show-edu" class="l-plus">
+								Voir plus
+								<img src="img/up-arrow.png">
 							</div>
-
 						</div>
 					</div>
 					<!--slide trigger-->
-					<div id="show-edu" class="timeline-frame-click">
+					<div class="timeline-frame">
 						<div class="timeline-line-top"></div>
 						<div class="timeline-date">2018</div>
 						<div class="timeline-line-empty"></div>
 					</div>
-					<div class="r-instance">
+					<div class="r-instance r-active"  OnClick="showPane(3);">
 						<div class="inst-text-content">
+							<div class="inst-img">
+								<img src="img/uvat.png">
+							</div>							
 							<div class="inst-txt">
-								<h5> <b>University of Amsterdam </b></h5>
-							</div>
-							<div class="inst-txt">
-								<h5>Amsterdam (Pays-Bas)</h5>
-								1 an
+								<h3> Security & Network Engineering </h3>
+								<p>UvA • Amsterdam • 1 an</p>
 							</div>
 						</div>
 					</div>
 				</div>			
 			</div>
 		</div>
-		<div class="row" class="section" >
-			<div id="exp" class="col-md-12">
-				<div class="row">
-					<div class="title">Experience</div>
-					<hr class="style-two">
-				</div>
+
+		<div class="section" >
+			<div id="exp">
+				<div class="title">Experience</div>
+				<hr class="style-two">
 
 				<div id="old-exp"><!--slides-->
 
@@ -395,13 +377,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="row" class="section">
-			<div id="projects" class="col-md-12">
-				<div class="row">
-					<div class="title">Projects</div>
-					<hr class="style-two">
-				</div>
-				<div class="row">
+		<div class="section">
+			<div id="projects">
+				<div class="title">Projects</div>
+				<hr class="style-two">
+				<div class="section">
 					<div class="project-table">
 						<h4> Click on a project to see the details</h4>
 						<table>
@@ -440,12 +420,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="row" class="section" >
-			<div id="leisures" class="col-md-12">
-				<div class="row">
-					<div class="title">Leisures</div>
-					<hr class="style-two">
-				</div>
+		<div class="section" >
+			<div id="leisures">
+				<div class="title">Leisures</div>
+				<hr class="style-two">
 				Bonjour à tous bande de bitches
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -513,6 +491,9 @@
 </script>
 <!-- Menu Toggle Script -->
 <script>
+	var sb = $("#wrapper");
+	function hideWrapper() {sb.removeClass("toggled");}
+
 	$(".menu-toggle").click(function(e) {
 		e.preventDefault();
 		$("#wrapper").toggleClass("toggled");
@@ -532,7 +513,11 @@
 		panes.eq(nbPane).fadeIn(200);
 	}
 </script>
-
+<script>
+	function alert() {
+		alert("Hello! I am an alert box!");
+	}
+</script>
 <!--
 -->
 </body>
