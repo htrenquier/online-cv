@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Henri Test</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div id="feuille" class="tr">
+	<div class="but1">
+		hello  bitch 1
+	</div>
+	<div class="but2">
+		hello  bitch 2
+	</div>
+	<div class="but3">
+		hello  bitch 3
+	</div>
+	<div class="calepin tr">
+		<div class="transition"> > </div>
+		<div id="but11" class="disp">
+			bye bitch 1
+		</div>
+		<div id="but22" class="disp">
+			bye bitch 2
+		</div>
+		<div id="but33" class="disp">
+			bye bitch 3
+		</div>
+	</div>
+</div>
+
+
+
+<script>
+
+	var disps = document.getElementsByClassName('disp'),i;
+	function hideDisps(){
+		for (var i = 0; i < disps.length; i ++) {
+    		disps[i].style.display = 'none';
+		}
+	}
+
+	$(document).on('click', '.but1', function(id){
+		$("#feuille").addClass("decale");
+		 hideDisps();
+		 document.getElementById('but11').style.display = 'block';
+	})
+	$(document).on('click', '.but2', function(id){
+		$("#feuille").addClass("decale");
+		hideDisps();
+		document.getElementById('but22').style.display = 'block';
+	})
+	$(document).on('click', '.but3', function(id){
+		$("#feuille").addClass("decale");
+		 hideDisps();
+		 document.getElementById('but33').style.display = 'block';
+	})
+	$(document).on('click', '.transition', function(){
+		hideDisps();
+		$("#feuille").removeClass("decale");
+	})
+
+</script>
+</body>
+</html>

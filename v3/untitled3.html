@@ -111,7 +111,7 @@
 		<div class="sidebar-wrapper">
 			<div class="sidebar-nav-fly">
 				<div class="sb-container">
-					<div class="sb-transition" OnClick="alert();">
+					<div class="sb-transition">
 						<img src="img/left-arrow.png">
 					</div>
 					<div class="sb-content">
@@ -136,21 +136,14 @@
 
 		</div>
 
-		<!-- 5- SEDI -->
-		<div class="sidebar-wrapper">
-			<div class="sidebar-nav-fly">
-				<li class="sidebar-brand">
-					EXP
-				</li>
-			</div>
-		</div>
 		<!-- /#sidebar-wrapper -->
 
 
 		<div class="section" id="intro">
 			<h1>Henri Trenquier</h1>
 
-			<h2> Software Engineer · Security and Network Engineer </h2>
+			<h2> Engineer </h2>
+			<h2> Software · Security · Networking </h2>
 			<div id="network">
 				<div class="row">
 					<!-- Add font awesome icons -->
@@ -465,8 +458,6 @@
 		$( "#old-exp" ).slideDown( "slow", function() {
 		});
 	});
-</script>
-<script>
 	$( '#show-edu' ).click(function() {
 		$( "#old-edu" ).slideDown( "slow", function() {
 		});
@@ -503,15 +494,20 @@
 <!-- Panel effect -->
 <script>
 	var panes = $(".sidebar-nav-fly");
-	function showPane(nbPane) {hideOldPane(nbPane);}
-	function hideOldPane(nbPane) {
+	function showPane(numPane) {hideOldPane(numPane);}
+	function hideOldPane(numPane) {
 		$("#wrapper").addClass("toggled");
 		panes.fadeOut(200).delay(100);
-		showNewPane(nbPane);
+		showNewPane(numPane);
 	}
-	function showNewPane(nbPane) {
-		panes.eq(nbPane).fadeIn(200);
+	function showNewPane(numPane) {
+		panes.eq(numPane).fadeIn(200);
 	}
+</script>
+<script>
+	$(document).on('click', '.sb-transition', function(){
+		$("#wrapper").toggleClass("toggled");
+	})
 </script>
 <script>
 	function alert() {
