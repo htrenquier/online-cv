@@ -6,6 +6,9 @@
 	<link rel="stylesheet" href="style.css" />
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -24,34 +27,37 @@
 			<div class="profile-img">
 				<img src="/Users/htrenqui/Desktop/profile.jpg">
 			</div>
-			<div class="profile-ctn">
-				<div class="profile-box">
-					<h1>Henri Trenquier</h1>
+			<div class="profile-ctn desc">
+				<div class="profile-box name">
+					Henri Trenquier
 				</div>
-				<div class="profile-box">
-					<h2> Engineer </h2>
-					<h2> Software · Security · Networking </h2>
+				<div class="profile-box job">
+					Software · Security · Networking
 				</div>
-				<div class="profile-box">
-					<div id="network">
-						<div class="row">
-							<!-- Add font awesome icons -->
-							<a href="https://www.linkedin.com/in/henri-trenquier-a87b72150/" class="fa fa-linkedin" target="_blank"></a>
-							<a href="https://github.com/htrenquier" class="fa fa-github" target="_blank"></a>
-						</div>
+
+				<div class="profile-box quotes">
+					<!-- fade out -->
+					<!-- fade in  -->
+					<div class="quote"> As a young French engineer, I devote myself entirely in every task I am expected to complete.
 					</div>
+					<div class="quote">I am an organized, entirely reliable and very motivated person.
+					</div>
+					<div class="quote">The flawless results arise from the interest I find in the topics I work on.
+					</div>
+					<!-- fade out -->
+					<!-- fade in  -->
 				</div>
-				<div class="profile-box">
-				<!-- fade out -->
-				<!-- fade in  -->
-				<h3 class="quotes"> As a young French engineer, I devote myself entirely in every task I am expected to complete.
-				</h3>
-				<h3 class="quotes">I am an organized, entirely reliable and very motivated person.
-				</h3>
-				<h3 class="quotes">The flawless results arise from the interest I find in the topics I work on.
-				</h3>
-				<!-- fade out -->
-				<!-- fade in  -->
+			</div>
+			<div class="profile-ctn">
+				<!-- Add font awesome icons -->
+				<div class="network">
+					<a href="https://www.linkedin.com/in/henri-trenquier-a87b72150/" class="fab fa-linkedin-in" target="_blank"></a>
+				</div>
+				<div class="network">
+					<a href="https://github.com/htrenquier" class="fab fa-github" target="_blank"></a>
+				</div>
+				<div class="network">
+					<a class="fas fa-file-alt"></a>
 				</div>
 			</div>
 		</div>
@@ -485,7 +491,7 @@
 
 				(function() {
 
-					var quotes = $(".quotes");
+					var quotes = $(".quote");
 					var quoteIndex = -1;
 
 					function showNextQuote() {
@@ -499,7 +505,7 @@
 					showNextQuote();
 
 				})();
-</script>
 			</script>
-		</body>
-		</html>
+		</script>
+	</body>
+	</html>

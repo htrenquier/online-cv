@@ -1,7 +1,8 @@
 body{
 	background-image: url('./../img/bg.png');
 	background-attachment: fixed;
-	font-family: Monaco;
+	/*font-family: Monaco;*/
+	font-family: 'Open Sans', sans-serif;
 	margin: 0 0 0 0;
 	padding-bottom: 10px;
 }
@@ -46,13 +47,12 @@ body{
 	align-items: center;
 	/*border: 3px blue solid;*/
 }
-.hdr-item:hover {
-	background-color: red;
+.hdr-item:hover{
+	background-color: rgba(182,182,182,0.7);
 }
 
-.active {
-	background-color: red;
-
+.active{
+	background-color: rgba(182,182,182,0.7);
 }
 
 .tr {
@@ -447,10 +447,12 @@ hr.style-two {
 .timeline-date {
 	text-align: center;
     /*width: 100%;*/
-    height: 10%;
-    font-size: 90%;
+    height: 1em;
+    line-height: 1em;
+    font-size: 0.9vw;
     border-bottom: 1px black groove;
     border-top: 1px black groove;
+
     /*border: 3px black dotted;*/
 }
 .timeline-line-empty {
@@ -467,6 +469,11 @@ hr.style-two {
 	display: flex;
 	flex-direction: column;
     justify-content: center;
+    color: white;
+}
+
+#intro p body a {
+	color: white;
 }
 
 .profile {
@@ -476,65 +483,86 @@ hr.style-two {
 	margin-top: 45px;
 	margin-left: 45px;
 	display: flex;
+	justify-content: space-between;
 	flex-direction: row;
 	width: 70%;
-	border: 3px green solid;
+	/*border: 3px green solid;*/
+}
+
+.desc {
+	flex: 1;
 }
 
 .profile-img {
-	border: 3px pink solid;
-	transform: translate(0,-50%);
+	/*border: 3px pink solid;*/
+	max-width: 15%;
+	/*transform: translate(0,-50%);*/
 }
 .profile-img img{
-	max-width: 250px;
-	transform: rotate(-13deg);
+	max-width: 100%;
+	max-height: 100%;
+	/*transform: rotate(-13deg);*/
 }
 
 .profile-ctn {
 	margin-left: 30px;
-	width: 80%;
+	width: all;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	border: 6px purple dotted;
+	/*border: 6px purple dotted;*/
 }
 
 .profile-box {
-	height: 100%;
+	/*border: 2px pink solid;*/
 }
-.profile-box h1 {
-	line-height: 100%;
-	border: 3px blue solid;
+
+.name {
+	font-size: 300%;
+	font-weight: lighter; 
+}
+
+.job {
 	font-size: 150%;
 }
-.profile-box h2 {
-	line-height: 100%;
-	border: 3px purple solid;
-	font-style: oblique;
-	font-size: 100%;
-}
-.profile-box h3 {
-	line-height: 100%;
-	border: 3px green solid;
-	text-align: center;
-	font-size: 80%;
-}
-.quotes {display: none;} /*http://jsfiddle.net/jfriend00/n4mKw/*/
 
-#network {
-	border: 3px pink solid;
+.quotes {
+	padding-top: 1em;
+	height: 2em;
+	font-style: oblique;
+	flex: 1;
+}
+
+.quote {
+	display: none;
+	justify-content: center;
+} /*http://jsfiddle.net/jfriend00/n4mKw/*/
+
+.network {
+	padding: 5px;
+	width: 40px;
+	height: 40px;
+	/*border: 3px pink solid;*/
 	text-align: center;
 }
 
 /* Style all font awesome icons */
-.fa {
-    padding: 10px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
+.fab{
+	padding: 10px 10px 10px 10px;
+    /*text-align: center;*/
     text-decoration: none;
     border-radius: 50%;
+	font-size: 1.5em;
 }
+
+.fas{
+	padding: 11px 12px 11px 12px;
+	/*text-align: center;*/
+	text-decoration: none;
+	border-radius: 50%;
+	font-size: 1.5em;
+}
+
 
 /* Add a hover effect if you want */
 .fa:hover {
@@ -545,29 +573,22 @@ hr.style-two {
 /* Set a specific color for each brand */
 
 /* LinkedIn */
-.fa-linkedin {
-    background: #0077B5;
+.fa-linkedin-in {
+    background: #00a5ff;
     color: white;
 }
 
 /* Github */
 .fa-github {
-    background: #6e5494;
+    background: #bb8eff;
     color: white;
 }
-
-
-
-#edu {
+/* CV */
+.fa-file-alt {
+	background: #009930;
+	color: white;
 
 }
-
-#exp {
-}
-
-#projects {
-}
-
 .project-table {
 	padding: 20px 20px 20px 20px;
 }
